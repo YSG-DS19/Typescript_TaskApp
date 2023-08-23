@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">Task Creation App</a>
+      <input class="form-control me-2" type="search" id="search" placeholder="Search" aria-label="Search"
+        onkeyup="search()">
+    </div>
+  </nav>
+
+
+  <div class="form-group">
+    <input type="text" class="form-control" id="TaskName" placeholder="Enter Task Name...">
+    <button class="btn btn-outline-primary" type="submit" onclick="addTask()" onEner>Add Task</button>
+  </div>
+
+
+  <table class="table" id="tableID">
+    <thead >
+      <tr >
+        <th scope="col">Checkbox</th>
+        <th scope="col">Task Name</th>
+        <th scope="col">Task Status</th>
+        <th scope="col">Delete Task</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider" id="tbody">
+
+    </tbody>
+  </table>
+
+  <script>var exports = {};</script>
+  <script src="index.js"></script>
+</body>
+
+</html>
